@@ -1,0 +1,5 @@
+// * for highlighted comments.
+// ! for important comments (usually red).
+// ? for questions.
+// TODO for tasks (usually blue).
+// FIXME for errors or warnings.

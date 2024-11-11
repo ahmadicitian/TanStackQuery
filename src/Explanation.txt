@@ -1,0 +1,56 @@
+TanStack Query / React Query:
+* Ye ek library hai jo apke data k state ko handle krne ma 
+  madad krte ha jo ap server se fetch krte ho, like APIs in
+  our react application.
+
+* Ye ek bahot he poweful tool hai server-side-data ko manage
+  krne k leye.
+
+QueryClientProvider:
+* Ye ek instance provide krta hai apke react application ko
+  takay ap react query k functionalities apne react app ma 
+  use kr sako.
+
+QueryClient:
+* Ye responsible ha data fetch,caching krne k leye and state
+  management k leye be apke queries k mutabiq.
+
+QuerKey:
+* ye ek array or string hote ha joke hr ek query ko uniquely
+  define krte hain.
+  or ye React Query ko batate k Cache ma jo data para ha wo 
+  konse request ka hai.
+
+* ye data ko ek specific key k through cache krta hai or esse
+  key k sath osko update be krta hai.
+
+QueryFn:
+* ye ek query function ha joke query k run hone pe call hota 
+  hai. or hum esse k through sare requests bhejte hai.
+
+UseQuery:
+* ye react query ka hook hai jo data ko fetch or read krne k leye
+  use hota hai.(Only For GET Requests).
+
+UseMutation:
+* ye be react query ka hook hai joke create,update, or delete 
+  requests k leye use hota hai.
+
+PlaceholderData:
+- Definition: 
+            Ye ek optional property hai jo temporary data ko dikhati 
+            hai jab tak query fresh data load nahi kar leti.
+- Explanation: Jab hum data ko `useQuery` ke zariye fetch karte hain, 
+            agar naya data load ho raha hota hai aur hum chahte hain ke 
+            purana data tab tak dikhta rahe jab tak naya data load ho, 
+            toh hum `placeholderData` ka istemal karte hain.
+
+- Is Example mein: `placeholderData: keepPreviousData` ka matlab ye hai 
+                ke jab tak naya data load nahi hota, pichle page ka data 
+                nazar aata rahega. Ye technique seamless transition ke 
+                liye useful hoti hai, jisse user ko ye lagta hai ke data 
+                smoothly update ho raha hai bina kisi flicker ke.
+
+  Yani jab hum page change karte hain ya data reload hota hai, purana data 
+  placeholder ke tor par wahan rehta hai jab tak naya data fetch ho kar aa 
+  nahi jata.
